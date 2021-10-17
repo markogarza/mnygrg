@@ -10,8 +10,8 @@ const editorMode = process.env.SWELL_EDITOR === 'true';
 
 export default async () => {
 	const storeId = process.env.SWELL_STORE_ID;
-	const publicKey = process.env.SWELL_PUBLIC_KEY || settings.store.public_key;
-	const storeUrl = process.env.SWELL_STORE_URL || settings.store.url;
+	const publicKey = process.env.SWELL_PUBLIC_KEY;
+	const storeUrl = process.env.SWELL_STORE_URL;
 
 	const initialSettings = await loadSettings({
 		storeId,
