@@ -34,6 +34,7 @@ export default async () => {
 				productionTip: false
 			}
 		},
+		target: 'static',
 
 		/*
      ** Make all components in the /components folder available in templates without
